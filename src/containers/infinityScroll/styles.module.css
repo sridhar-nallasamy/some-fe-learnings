@@ -1,0 +1,20 @@
+.rootDiv {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+
+.rootDiv > input {
+  width: 13rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  margin: 2rem auto;
+}
+
+.loader {
+  color: yellow;
+}
