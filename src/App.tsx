@@ -1,7 +1,7 @@
-import ScrollEffect from './containers/scrollEffect';
+import MultiProgressBar from './containers/multiProgressBar';
 
 function App() {
-  return <ScrollEffect />;
+  return <MultiProgressBar />;
 }
 
 export default App;
