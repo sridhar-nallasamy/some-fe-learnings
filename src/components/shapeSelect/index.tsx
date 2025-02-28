@@ -1,7 +1,7 @@
 import Boxes from './boxes';
 import styles from './styles.module.css';
 
-const Shape = () => {
+const ShapeSelect = () => {
   const boxesData = [
     [1, 1, 1],
     [1, 0, 0],
@@ -15,4 +15,4 @@ const Shape = () => {
   );
 };
 
-export default Shape;
+export default ShapeSelect;

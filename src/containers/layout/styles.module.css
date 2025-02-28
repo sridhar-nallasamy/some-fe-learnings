@@ -1,0 +1,8 @@
+.rootDiv {
+  position: relative;
+}
+
+.main {
+  width: 100vw;
+  height: calc(100vh - 3rem);
+}
