@@ -6,7 +6,7 @@ const Boxes: React.FC<{ boxesData: number[][] }> = ({ boxesData }) => {
   const [selected, setSelected] = useState<Set<number>>(new Set());
   const [isUnloading, setIsUnloading] = useState<boolean>(false);
 
-  const timerRef = useRef<number>();
+  const timerRef = useRef<number>(0);
 
   const boxes = useMemo(() => {
     return boxesData.flat(Infinity);

@@ -1,0 +1,35 @@
+.rootDiv {
+  height: 3rem;
+  width: 100vw;
+  border-bottom: 1px solid lightslategray;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  background-color: black;
+}
+
+.logoImg {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.selectBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.selectBox .fileCodeIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  fill: darkcyan;
+}
+
+.select {
+  height: 1.5rem;
+  cursor: pointer;
+}
