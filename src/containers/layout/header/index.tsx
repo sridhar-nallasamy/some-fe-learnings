@@ -2,9 +2,12 @@ import styles from './styles.module.css';
 import VgsLogo from '../../../assets/VGS.svg';
 import { useLocation, useNavigate } from 'react-router';
 import { registry } from '../../../constants/index';
+import FileCodeIcon from '../../../assets/fileCodeIcon';
 
 const Header = () => {
   const { pathname } = useLocation();
+  const currentPath = pathname.replace(/^\//g, '');
+
   const navigate = useNavigate();
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -23,11 +26,11 @@ const Header = () => {
       />
       <div className={styles.selectBox}>
         <select
-          value={pathname.replace(/^\//g, '')}
+          value={currentPath}
           onChange={onChangeHandler}
           className={styles.select}
         >
-          {registry.map(
+          {Object.values(registry).map(
             ({ path, label }) =>
               path && (
                 <option value={path} key={path}>
@@ -36,6 +39,12 @@ const Header = () => {
               )
           )}
         </select>
+        <FileCodeIcon
+          className={styles.fileCodeIcon}
+          onClick={() => {
+            window.open(registry[currentPath].path, '_blank');
+          }}
+        />
       </div>
     </header>
   );

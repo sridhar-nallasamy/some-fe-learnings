@@ -16,7 +16,7 @@ const ProgressBar = () => {
           setIsStart(false);
           return p;
         });
-      }, 100);
+      }, 60);
     }
 
     return () => {

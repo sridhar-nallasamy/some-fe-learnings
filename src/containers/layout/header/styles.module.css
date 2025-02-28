@@ -18,6 +18,15 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.selectBox .fileCodeIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  fill: darkcyan;
 }
 
 .select {

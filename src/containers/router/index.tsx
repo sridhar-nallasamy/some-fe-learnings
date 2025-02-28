@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     Component: Layout,
     ErrorBoundary: ErrorPage,
     children: [
-      ...registry.map(({ path, element, Component }) => ({
+      ...Object.values(registry).map(({ path, element, Component }) => ({
         path,
         element,
         Component,
