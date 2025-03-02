@@ -1,9 +1,9 @@
-import { createBrowserRouter } from 'react-router';
+import { createHashRouter } from 'react-router';
 import Layout from '../layout';
 import ErrorPage from '../pages/error';
 import { registry } from '../../constants';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     Component: Layout,

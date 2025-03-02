@@ -12,7 +12,6 @@ const registry: Record<
   string,
   Pick<RouteObject, 'Component' | 'element' | 'path'> & {
     label: string;
-    sourceCode?: string;
   }
 > = {
   default: { path: '', element: <Navigate to={'chromeTab'} />, label: '' },
@@ -20,8 +19,6 @@ const registry: Record<
     path: 'chromeTab',
     Component: ChromeTab,
     label: 'Chrome Tab',
-    sourceCode:
-      'https://github.com/sridhar-nallasamy/some-fe-stuffs/blob/main/src/components/chromeTab/index.tsx',
   },
   fontSelect: {
     path: 'fontSelect',
