@@ -15,7 +15,11 @@ const registry: Record<
   }
 > = {
   default: { path: '', element: <Navigate to={'chromeTab'} />, label: '' },
-  chromeTab: { path: 'chromeTab', Component: ChromeTab, label: 'Chrome Tab' },
+  chromeTab: {
+    path: 'chromeTab',
+    Component: ChromeTab,
+    label: 'Chrome Tab',
+  },
   fontSelect: {
     path: 'fontSelect',
     Component: FontSelect,
