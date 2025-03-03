@@ -1,5 +1,5 @@
 name: Deployment Workflow
-run-name: ${{ github.ref_name }} Deployment 🚀
+run-name: ${{ github.actor }} triggered Deployment 🚀
 on: push
 
 jobs:
